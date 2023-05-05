@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.link_row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.link {
+  margin-left: 1rem;
+}
+
+@media (min-width: 901px) {
+  .wrapper {
+    margin: 6rem;
+  }
+}

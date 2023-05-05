@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className={styles.page_main}>
       <Typography variant="h2" className={styles.text}>
-        Hello, I'm Stephen Hopkins
+        Hello, I&apos;m Stephen Hopkins
       </Typography>
       <Typography variant="h4" className={styles.text}>
         A full stack software engineer with extensive experience in Typescript, React, C# and .NET Core

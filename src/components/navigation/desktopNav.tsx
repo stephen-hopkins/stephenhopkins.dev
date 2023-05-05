@@ -10,21 +10,27 @@ export default function DesktopNav() {
       <Link href="/">
         <Image src={photo} className={styles.headshot} alt="Picture of the author" width="100" />
       </Link>
-      <Typography className={styles.headline} variant="h4">
-        Stephen Hopkins
-      </Typography>
-      <Typography className={styles.headline} variant="h6">
-        Full Stack Software Engineer
-      </Typography>
-      <Link href="/" component={NextLink} variant="h4" className={styles.first_link}>
-        Home
-      </Link>
-      <Link href="/cv" component={NextLink} variant="h4" className={styles.link}>
-        CV
-      </Link>
-      <Link href="/contact" component={NextLink} variant="h4" className={styles.link}>
-        Contact
-      </Link>
+      <div className={styles.headline}>
+        <Typography variant="h4">Stephen Hopkins</Typography>
+      </div>
+      <div className={styles.headline}>
+        <Typography variant="h6">Full Stack Software Engineer</Typography>
+      </div>
+      <div className={styles.first_link}>
+        <Link href="/" component={NextLink} variant="h4">
+          Home
+        </Link>
+      </div>
+      <div className={styles.link}>
+        <Link href="/cv" component={NextLink} variant="h4">
+          CV
+        </Link>
+      </div>
+      <div className={styles.link}>
+        <Link href="/contact" component={NextLink} variant="h4">
+          Contact
+        </Link>
+      </div>
     </aside>
   );
 }

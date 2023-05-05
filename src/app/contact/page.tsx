@@ -10,21 +10,27 @@ export default function Contact() {
       <Typography variant="h4">Contact</Typography>
       <div className={styles.link_row}>
         <Email fontSize="large" />
-        <Link variant="h6" href="mailto:me@stephenhopkins.dev" className={styles.link}>
-          me@stephenhopkins.dev
-        </Link>
+        <div className={styles.link}>
+          <Link variant="h6" href="mailto:me@stephenhopkins.dev">
+            me@stephenhopkins.dev
+          </Link>
+        </div>
       </div>
       <div className={styles.link_row}>
         <GitHub fontSize="large" />
-        <Link variant="h6" href="https://github.com/stephen-hopkins" className={styles.link}>
-          github.com/stephen-hopkins
-        </Link>
+        <div className={styles.link}>
+          <Link variant="h6" href="https://github.com/stephen-hopkins">
+            github.com/stephen-hopkins
+          </Link>
+        </div>
       </div>
       <div className={styles.link_row}>
         <LinkedIn fontSize="large" />
-        <Link variant="h6" href="https://www.linkedin.com/in/stephen-hopkins-dev/" className={styles.link}>
-          www.linkedin.com/in/stephen-hopkins-dev/
-        </Link>
+        <div className={styles.link}>
+          <Link variant="h6" href="https://www.linkedin.com/in/stephen-hopkins-dev/">
+            www.linkedin.com/in/stephen-hopkins-dev/
+          </Link>
+        </div>
       </div>
     </main>
   );

@@ -34,37 +34,25 @@ export default function MobileNav() {
         >
           <List>
             <ListItem>
-              <Link
-                href="/"
-                component={NextLink}
-                variant="body1"
-                className={styles.first_link}
-                onClick={() => setShowDrawer(false)}
-              >
-                Home
-              </Link>
+              <div className={styles.first_link}>
+                <Link href="/" component={NextLink} variant="body1" onClick={() => setShowDrawer(false)}>
+                  Home
+                </Link>
+              </div>
             </ListItem>
             <ListItem>
-              <Link
-                href="/cv"
-                component={NextLink}
-                variant="body1"
-                className={styles.link}
-                onClick={() => setShowDrawer(false)}
-              >
-                CV
-              </Link>
+              <div className={styles.link}>
+                <Link href="/cv" component={NextLink} variant="body1" onClick={() => setShowDrawer(false)}>
+                  CV
+                </Link>
+              </div>
             </ListItem>
             <ListItem>
-              <Link
-                href="/contact"
-                component={NextLink}
-                variant="body1"
-                className={styles.link}
-                onClick={() => setShowDrawer(false)}
-              >
-                Contact
-              </Link>
+              <div className={styles.link}>
+                <Link href="/contact" component={NextLink} variant="body1" onClick={() => setShowDrawer(false)}>
+                  Contact
+                </Link>
+              </div>
             </ListItem>
           </List>
         </Drawer>
